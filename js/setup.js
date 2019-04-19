@@ -27,6 +27,6 @@ window.addEventListener("load", function() {
 });
 
 
-BDTLL.locales.utils.init("_locales", function () {
+BDTLL.locales.utils.init("locales", function () {
 	BDTLL.locales.utils.load_script("js/blockedTranslate.js");
 });
