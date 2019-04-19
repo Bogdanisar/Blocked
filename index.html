@@ -1,11 +1,74 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Test Page</title>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title id="window_title"></title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link rel="stylesheet" href="css/blocked.css" type="text/css"></link>
+    
+<!--    <script type="text/javascript" src="js/jquery_min.js"></script>-->
+<!--    <script type="text/javascript" src="../../scripts/consts.js"></script>-->
+<!--    <script type="text/javascript" src="../../scripts/utils.js"></script>-->
+<!--    <script type="text/javascript" src="../_locales/locales.js"></script>-->
+<!--    -->
+<!--    <script type="text/javascript">-->
+<!--      BDTLL.locales.utils.init(-->
+<!--        "../_locales",-->
+<!--        function () {-->
+<!--          BDTLL.locales.utils.load_script("js/blockedTranslate.js");-->
+<!--        }-->
+<!--      );-->
+<!--    </script>-->
 
-	<p> This is a test blocked page </p>
+    <script>
+        // location.href = "https://developer.mozilla.org/en-US/docs/Web/API/Document/referrer";
+        safari.extension.dispatchMessage("test", {"a": 2});
+    </script>
 
-</body>
+  </head>
+  
+  <body>
+    <div id="BDTLL_is_blocked_page"></div>
+    
+    <div class="alert_container">
+      <div class="header">
+        <div id="product_name"></div>
+        <a href="javascript:;" id='send_feedback'></a>
+      </div>
+
+      <div class="content">
+        <div class="alert_stop" id="alert_title"></div>
+        <div class="text_content" id="alert_text">
+            <div class="link_length">
+              <a id="BDTLL_alert_url" href="javascript:;"></a>
+            </div>
+        </div>
+
+        <div class="buttons_container">
+          <div id="BDTLL_go_to_home" class="button_green"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom_link" id="BDTLL_proceed_anyway">
+      <a href="#" id="proceed_anyway"></a>
+    </div>
+
+    <div class="whitelist-container">
+      <div > <!-- submit -->
+        <div class="w-title" id='title_whitelist'></div>
+        <div class="w-description" id='text_whitelist'></div>
+        <button type="button" class="submit" id="BDTLL_whitelist"></button>
+      </div>
+
+      <div hidden> <!-- url submitted -->
+        <div class="w-title" id='title_whitelist_submit'></div>
+        <div class="w-description" id='text_whitelist_submit'></div>
+        <div class="count">
+          <span class="no">3</span>
+          <span class="seconds">sec</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

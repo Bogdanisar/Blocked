@@ -1,0 +1,166 @@
+body {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background: #eeeeee;
+  color: #fff;
+  font-variant-ligatures: none;
+}
+
+*[hidden] {
+  visibility: collapse;
+}
+
+.alert_container  {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 640px;
+  margin-top: 140px;
+  background-color: #252628;
+  border-radius: 4px;
+}
+
+.header {
+  height: 44px;
+  border-bottom: 1px solid #313438;
+}
+
+#send_feedback {
+  float: right;
+  font-size: 16px;
+  margin-right: 20px;
+  line-height: 44px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#send_feedback:hover {
+  color: #9da1aa;
+}
+
+#product_name {
+  color: #bbc7d4;
+  font-size: 16px;
+  background-image: url(../../img/bitdefender_logo.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 16px;
+  background-position: 17px 12px;
+  line-height: 44px;
+  padding-left: 122px;
+  float: left;
+}
+
+.content a {
+  text-decoration: underline;
+  color: #919191;
+}
+
+.alert_red,
+.alert_stop {
+  height: 100px;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background-position: 30px 0;
+  padding-left: 120px;
+  padding-top: 10px;
+  font-size: 26px;
+  background-image: url(../../img/icon_critical.png);
+
+}
+
+.text_content {
+  width: 350px;
+  margin-left: 120px;
+  font-size: 16px;
+  margin-top: -59px;
+  color: #aaaaab;
+}
+
+.buttons_container {
+  text-align: center;
+}
+
+.button_green {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  background-color: #6fa316;
+  display: inline-block;
+  margin: 32px auto;
+  padding: 0 23px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.bottom_link {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.bottom_link a {
+  color: #252628;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.link_length {
+  margin-top: 6px;
+  width: 470px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+
+.link_length a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.whitelist-container {
+  width: 400px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  color: #252628;
+}
+
+.w-title {
+  color: #252628;
+  font-size: 16px;
+}
+
+.w-description {
+  color: #636363;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+.submit {
+  background-image: none;
+  background-color: #252628;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.count {
+  color: #000;
+  margin-top: -20px;
+}
+
+.no {
+  font-size: 48px;
+}
+
+.sec {
+  font-size: 12px;
+}
