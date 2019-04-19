@@ -6,25 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
     <link rel="stylesheet" href="css/blocked.css" type="text/css"></link>
     
-<!--    <script type="text/javascript" src="js/jquery_min.js"></script>-->
-<!--    <script type="text/javascript" src="../../scripts/consts.js"></script>-->
-<!--    <script type="text/javascript" src="../../scripts/utils.js"></script>-->
-<!--    <script type="text/javascript" src="../_locales/locales.js"></script>-->
-<!--    -->
-<!--    <script type="text/javascript">-->
-<!--      BDTLL.locales.utils.init(-->
-<!--        "../_locales",-->
-<!--        function () {-->
-<!--          BDTLL.locales.utils.load_script("js/blockedTranslate.js");-->
-<!--        }-->
-<!--      );-->
-<!--    </script>-->
-
-    <script>
-        // location.href = "https://developer.mozilla.org/en-US/docs/Web/API/Document/referrer";
-        safari.extension.dispatchMessage("test", {"a": 2});
-    </script>
-
+    <script type="text/javascript" src="js/jquery_min.js"></script>
+    <script type="text/javascript" src="_locales/locales.js"></script>
+    <script type="text/javascript" src="js/setup.js"></script>
   </head>
   
   <body>
@@ -55,13 +39,13 @@
     </div>
 
     <div class="whitelist-container">
-      <div > <!-- submit -->
+      <div>  <!-- submit --> 
         <div class="w-title" id='title_whitelist'></div>
         <div class="w-description" id='text_whitelist'></div>
         <button type="button" class="submit" id="BDTLL_whitelist"></button>
       </div>
 
-      <div hidden> <!-- url submitted -->
+      <div hidden>  <!-- url submitted  -->
         <div class="w-title" id='title_whitelist_submit'></div>
         <div class="w-description" id='text_whitelist_submit'></div>
         <div class="count">

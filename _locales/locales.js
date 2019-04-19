@@ -62,11 +62,46 @@ BDTLL.locales.utils = BDTLL.locales.utils || (function() {
     }
   }
 
+  /**
+   * Obtain a GET parameter value.
+   * @param search list of the parameters. This should be extracted from the GET
+   * list or using location.search.
+   * @param paramName the name of the needed parameter
+   * @return the parameter value or null if the parameter is not found.
+   */
+  function BDTLL_getParam(search, paramName) {
+    var compareKeyValuePair = function(pair) {
+      var key_value = pair.split('=');
+      var decodedKey = decodeURIComponent(key_value[0]);
+      var decodedValue = decodeURIComponent(key_value[1]);
+      if (decodedKey == paramName) return decodedValue;
+      return null;
+    };
+    
+    var comparisonResult = null;
+    
+    if (search.indexOf('&') > -1) {
+      var params = search.split('&');
+      for (var i = 0; i < params.length; i++) {
+        comparisonResult = compareKeyValuePair(params[i]);
+        if (comparisonResult !== null) {
+          break;
+        }
+      }
+    }
+    else {
+      comparisonResult = compareKeyValuePair(search);
+    }
+    
+    return comparisonResult;
+  }
+
   return {
     default_locale: default_locale,
     BDTLL_get_browser_locale: BDTLL_get_browser_locale,
     get_localized_text: get_localized_text,
     init: init,
-    load_script: load_script
+    load_script: load_script,
+    getParam: BDTLL_getParam
   }
 })();

@@ -21,7 +21,7 @@ $('#text_whitelist_submit').prepend(
 $('.submit').prepend(
   BDTLL.locales.utils.get_localized_text('button_whitelist'));
 
-var blockStatus = BDTLL.utils.getParam(
+var blockStatus = BDTLL.locales.utils.getParam(
   document.location.search.substring(1), 'status');
 if ('Phishing' === blockStatus) {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_phish'));

@@ -42,7 +42,7 @@ body {
 #product_name {
   color: #bbc7d4;
   font-size: 16px;
-  background-image: url(../../img/bitdefender_logo.svg);
+  background-image: url(../img/bitdefender_logo.svg);
   background-repeat: no-repeat;
   background-size: 100px 16px;
   background-position: 17px 12px;
@@ -65,7 +65,7 @@ body {
   padding-left: 120px;
   padding-top: 10px;
   font-size: 26px;
-  background-image: url(../../img/icon_critical.png);
+  background-image: url(../img/icon_critical.png);
 
 }
 
