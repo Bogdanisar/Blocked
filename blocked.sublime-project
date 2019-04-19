@@ -2,16 +2,7 @@
 	"folders":
 	[
 		{
-			"path": "_locales"
-		},
-		{
-			"path": "css"
-		},
-		{
-			"path": "img"
-		},
-		{
-			"path": "js"
+			"path": "."
 		}
 	]
 }
