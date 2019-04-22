@@ -1,14 +1,9 @@
 
 
 function getPreviousURL() {
-  // var url = document.referrer;
-  var url = "";
-
-  if (url == "") {
-    url = BDTLL.locales.utils.getParam(document.location.search.substring(1), 'url');
-    url = decodeURIComponent(url);
-  }
-
+	url = BDTLL.locales.utils.getParam(document.location.search.substring(1), 'url');
+	url = decodeURIComponent(url);
+	
   return url;
 }
 
