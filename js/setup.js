@@ -19,11 +19,7 @@ window.addEventListener("load", function() {
 	else {
 		shortUrl = url;
 	}
-
-	// document.getElementById('BDTLL_alert_url').href = url;
-	document.getElementById('BDTLL_alert_url').onclick = function() {
-		window.location.href = getPreviousURL();
-	};
+	
 	document.getElementById('BDTLL_alert_url').appendChild( document.createTextNode(shortUrl) );
 });
 
