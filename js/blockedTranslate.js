@@ -23,10 +23,10 @@ $('.submit').prepend(
 
 var blockStatus = BDTLL.locales.utils.getParam(
   document.location.search.substring(1), 'status');
-if ('Phishing' === blockStatus) {
+if ('PHISHING' === blockStatus) {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_phish'));
-} else if ('Malware' === blockStatus) {
+} else if ('MALWARE' === blockStatus) {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_malware'));
-} else if ('Fraud' === blockStatus) {
+} else if ('FRAUD' === blockStatus) {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_fraud'));
 };
