@@ -25,8 +25,10 @@ var blockStatus = BDTLL.locales.utils.getParam(
   document.location.search.substring(1), 'status');
 if ('PHISHING' === blockStatus) {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_phish'));
-} else if ('MALWARE' === blockStatus) {
+} 
+else if ('MALWARE' === blockStatus) {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_malware'));
-} else if ('FRAUD' === blockStatus) {
+} 
+else if ('FRAUD' === blockStatus) {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_fraud'));
 };

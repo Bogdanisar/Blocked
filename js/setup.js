@@ -19,11 +19,11 @@ window.addEventListener("load", function() {
 	else {
 		shortUrl = url;
 	}
-	
+
 	document.getElementById('BDTLL_alert_url').appendChild( document.createTextNode(shortUrl) );
-});
-
-
+	
 	BDTLL.locales.utils.init("locales", function () {
-	BDTLL.locales.utils.load_script("js/blockedTranslate.js");
+		BDTLL.locales.utils.load_script("js/blockedTranslate.js");
+	});
 });
+
