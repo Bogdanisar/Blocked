@@ -21,6 +21,7 @@ window.addEventListener("load", function() {
 	}
 
 	document.getElementById('BDTLL_alert_url').appendChild( document.createTextNode(shortUrl) );
+	document.getElementById('BDTLL_alert_url').href = url;
 	
 	BDTLL.locales.utils.init("locales", function () {
 		BDTLL.locales.utils.load_script("js/blockedTranslate.js");
