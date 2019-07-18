@@ -11,6 +11,19 @@ if ('undefined' === typeof(BDTLL.locales.store)) {
 }
 
 BDTLL.locales.store['en_US'] = {
+  "title_miner": {
+    "message": "Mining attempt!"
+  },
+  "text_miner": {
+    "message": "This page is trying to use your hardware for mining pourposes."
+  },
+  "title_pua": {
+    "message": "PUA attempt!"
+  },
+  "text_pua": {
+    "message": "This page is trying to download Potentially Unwanted Apps on your machine."
+  },
+
   "text_malware": {
     "message": "This page contains viruses or other malware."
   },

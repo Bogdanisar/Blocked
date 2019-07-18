@@ -22,13 +22,21 @@ $('.submit').prepend(
   BDTLL.locales.utils.get_localized_text('button_whitelist'));
 
 var blockStatus = BDTLL.locales.utils.getParam(
-  document.location.search.substring(1), 'status');
-if ('PHISHING' === blockStatus) {
+  document.location.search.substring(1), 'status'
+);
+
+if (blockStatus === 'PHISHING') {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_phish'));
 } 
-else if ('MALWARE' === blockStatus) {
+else if (blockStatus === 'MALWARE') {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_malware'));
 } 
-else if ('FRAUD' === blockStatus) {
+else if (blockStatus === 'FRAUD') {
   $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_fraud'));
-};
+}
+else if (blockStatus === 'MINER') {
+  $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_miner'));
+}
+else if (blockStatus === 'PUA') {
+  $('#alert_text').prepend(BDTLL.locales.utils.get_localized_text('text_pua'));
+}
