@@ -179,6 +179,20 @@ html, body {
     padding: 16px 30px;
 }
 
+.threat-blocked .back-link-anchor {
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 70%;
+
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
 @media screen and (max-width: 425px) {
     .threat-blocked {
         text-align: center;
