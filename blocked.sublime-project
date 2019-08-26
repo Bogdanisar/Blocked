@@ -3,21 +3,6 @@
 	[
 		{
 			"path": "."
-		},
-		{
-			"path": "css"
-		},
-		{
-			"path": "favicon"
-		},
-		{
-			"path": "img"
-		},
-		{
-			"path": "js"
-		},
-		{
-			"path": "locales"
 		}
 	]
 }

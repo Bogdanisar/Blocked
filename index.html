@@ -1,80 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title id="window_title"></title>
-    
-    <!-- favicon links -->
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
-    <link rel="apple-touch-icon" href="favicon/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
-    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+<html><head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title id="window_title">Web Protection by Bitdefender</title>
+    <link rel="shortcut icon" type="image/png" href="img/context_menu_icon.png">
+    <link rel="stylesheet" type="text/css" href="./blocked.css">
+</head>
 
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
-    <link rel="stylesheet" href="css/blocked.css" type="text/css"></link>
-    
-    <script type="text/javascript" src="js/jquery_min.js"></script>
-    <script type="text/javascript" src="locales/locales.js"></script>
-    <script type="text/javascript" src="js/setup.js"></script>
-  </head>
-  
-  <body>
-    
-    <div class="alert_container">
-      <div class="header">
-        <div id="product_name"></div>
-        <a href="javascript:;" id='send_feedback'></a>
-      </div>
+<body>
 
-      <div class="content">
-        <div class="alert_stop" id="alert_title"></div>
-        <div class="text_content" id="alert_text">
-            <div class="link_length">
-              <a id="BDTLL_alert_url"></a>
-            </div>
-        </div>
+<div class="threat-blocked-view" id="threatBlockedView">
+	<div class="threat-blocked-container" id="threatBlockedContainer">
+		<div class="threat-blocked">
+			<div class="header">
+				<div class="logo">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+						<path fill="#d0021b" d="M31.69,32.44H26V42.2h5.46c3,0,7.28-.52,7.28-5C38.74,33.68,36.48,32.44,31.69,32.44Z"> </path>
+						<path fill="#d0021b" d="M53.91,0H6.09A6.09,6.09,0,0,0,0,6.08V53.92A6.09,6.09,0,0,0,6.09,60H53.91A6.09,6.09,0,0,0,60,53.92V6.08A6.09,6.09,0,0,0,53.91,0ZM32.09,47.46l-10.86,0V18.79c0-1.55-1.45-1.75-3.51-3.46L16,13.87v-.54H33.08c5,0,10.19,2.36,10.19,8.58,0,3.86-2.3,6.4-5.75,7.46v.1a8.07,8.07,0,0,1,7.22,8.25C44.74,45.16,38.41,47.46,32.09,47.46Z"> </path>
+						
+						<path fill="#d0021b" d="M36.22,25.76a3.79,3.79,0,0,0,1.15-2.82A3.9,3.9,0,0,0,36.26,20c-1-1-2-1.43-5.35-1.43H26v8.59h5.42C33.89,27.18,35.24,26.71,36.22,25.76Z">	</path>
+					</svg>
+				</div>
+				<h1>
+					<span>Web Protection by </span>Bitdefender
+				</h1>
+			</div>
+			<div class="body">
+				<h2>Phishing page blocked for your protection</h2>
+				<span class="muted">https://www.amtso.org/check-desktop-phishing-page/</span>
+				<p>
+					Phishing pages attempt to obtain sensitive information such as login credentials or credit card details by disguising as trustworthy entities. The stolen data can be then used for financial gain.
+				</p>
+			</div>
+			<div class="footer">
+				<button class="primary-btn" id="BDTLL_go_to_home">Take me back to safety
+				</button>
+				<a href="#" class="link-btn">I understand the risks, take me there anyway</a>
+				<span class="small muted" id="text_whitelist">
+					If you know this page is not dangerous, you can <a href="#">add it to your Exceptions list</a>.<br>Be aware that you will not be warned about any threats existing on this page.
+				</span>
+			</div>
+		</div>
+		<div class="toast center">
+			<div class="toast-msg" id="text_whitelist_toast">
+				<i class="checked"></i>The web page was added to the Exceptions list
+			</div>
+		</div>
+	</div>
+</div>
 
-        <div class="buttons_container">
-          <div id="BDTLL_go_to_home" class="button_green"></div>
-        </div>
-      </div>
-    </div>
 
-    <div class="bottom_link" id="BDTLL_proceed_anyway">
-      <a id="proceed_anyway"></a>
-    </div>
 
-    <div class="whitelist-container">
-      <div>  <!-- submit --> 
-        <div class="w-title" id='title_whitelist'></div>
-        <div class="w-description" id='text_whitelist'></div>
-        <button type="button" class="submit" id="BDTLL_whitelist"></button>
-      </div>
-
-      <div hidden>  <!-- url submitted  -->
-        <div class="w-title" id='title_whitelist_submit'></div>
-        <div class="w-description" id='text_whitelist_submit'></div>
-        <div class="count">
-          <span class="no">3</span>
-          <span class="seconds">sec</span>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+</body></html>
