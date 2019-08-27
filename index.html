@@ -20,28 +20,51 @@
 					</svg>
 				</div>
 				<h1>
-					<span>Web Protection by </span>Bitdefender
+					<span id="web_protection_title">
+						<!-- Web Protection by  -->
+					</span>
+					Bitdefender
 				</h1>
 			</div>
 			<div class="body">
-				<h2>Phishing page blocked for your protection</h2>
-				<a href="https://www.amtso.org/check-desktop-phishing-page/" class="muted back-link-anchor">https://www.amtso.org/check-desktop-phishing-page/</a>
-				<p>
-					Phishing pages attempt to obtain sensitive information such as login credentials or credit card details by disguising as trustworthy entities. The stolen data can be then used for financial gain.
+				<h2 id="blocked_title">
+					<!-- Phishing page blocked for your protection -->
+				</h2>
+				<a id="back-link-anchor" href="">
+					<!-- https://www.amtso.org/check-desktop-phishing-page/ -->
+				</a>
+				<p id="blocked_text">
+					<!-- Phishing pages attempt to obtain sensitive information such as login credentials or credit card details by disguising as trustworthy entities. The stolen data can be then used for financial gain. -->
 				</p>
 			</div>
 			<div class="footer">
-				<button class="primary-btn" id="BDTLL_go_to_home">Take me back to safety
+				<button id="alert_take_to_safety" class="primary-btn">
+					<!-- Take me back to safety -->
 				</button>
-				<a id="BDTLL_proceed_anyway" href="#" class="link-btn">I understand the risks, take me there anyway</a>
-				<span class="small muted" id="text_whitelist">
-					If you know this page is not dangerous, you can <a href="#" id="BDTLL_whitelist">add it to your Exceptions list</a>.<br>Be aware that you will not be warned about any threats existing on this page.
+				<a id="alert_ignore" href="#" class="link-btn">
+					<!-- I understand the risks, take me there anyway -->
+				</a>
+				<span id="text_whitelist" class="small muted">
+					<span id="text_whitelist_left">
+						<!-- If you know this page is not dangerous, you can  -->
+					</span>
+					<a id="text_whitelist_center" href="#">
+						<!-- add it to your Exceptions list -->
+					</a>
+					<span id="text_whitelist_right">
+						<!-- . -->
+					</span>
+					<br>
+					<span id="text_whitelist_cont">
+						<!-- Be aware that you will not be warned about any threats existing on this page. -->
+					</span>
 				</span>
 			</div>
 		</div>
 		<div class="toast center">
-			<div class="toast-msg" id="text_whitelist_toast">
-				<i class="checked"></i>The web page was added to the Exceptions list
+			<div id="text_whitelist_toast" class="toast-msg">
+				<i class="checked"></i>
+				<!-- The web page was added to the Exceptions list -->
 			</div>
 		</div>
 	</div>

@@ -179,7 +179,7 @@ html, body {
     padding: 16px 30px;
 }
 
-.threat-blocked .back-link-anchor {
+.threat-blocked #back-link-anchor {
     text-decoration: none;
     color: inherit;
     overflow: hidden;
